@@ -772,31 +772,43 @@ Banner Style
 --------------------------------------------- 
 */
 
+.container-banner {
+  position: relative;
+  min-height: 380px;
+}
+
 .main-banner {
-  background-image: url(../images/banner-bg.jpg);
+  background-image: url(../images/black_bg.jpg);
   background-position: center center;
   background-size: cover;
   min-height: 380px;
   border-radius: 23px;
-  padding: 80px 60px;
+  min-width: 100%;
+  position: absolute;
+  opacity: 0.5;
 }
 
-.main-banner h6 {
-  font-size: 20px;
-  color: #fff;
+.header-text {
+  position: relative;
+  margin: 24px;
+}
+
+.header-text h6 {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
   font-weight: 400;
   margin-bottom: 25px;
 }
 
-.main-banner h4 {
+.header-text h4 {
   font-size: 45px;
   text-transform: uppercase;
   margin-bottom: 25px;
 }
 
-.main-banner h4 em {
+.header-text h4 em {
   font-style: normal;
-  color: #ec6090;
+  color: #fc4182;
 }
 
 /* 

@@ -1,6 +1,6 @@
 const template = `<div class="col-lg-3 col-sm-6">
   <div class="item">
-    <img src="assets/images/abutilon.jpg" alt="">
+    <img src="$urlFlower" alt="flor">
       <h4>$nameFlower</h4>
   </div>
 </div>`;
@@ -11,7 +11,8 @@ xmlhttp.onreadystatechange = function () {
 		const txt = xmlhttp.responseText;
 		const list = txt.split(/\r?\n/);
     list.forEach((item) => {
-      final += template.replace("$nameFlower",item);
+      const values = item.split("|");
+      final += template.replace("$nameFlower",values[0]).replace("$urlFlower",values[1]);
     });
     console.log(final);
 	}

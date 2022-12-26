@@ -1,6 +1,6 @@
 const template = `<div class="col-lg-3 col-sm-6">
   <div class="item">
-    <img src="$urlFlower" alt="flor">
+    <img loading="lazy" src="$urlFlower" alt="flor">
       <h4>$nameFlower</h4>
   </div>
 </div>`;

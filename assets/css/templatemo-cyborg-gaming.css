@@ -335,7 +335,7 @@ Header Style
 */
 
 .background-header {
-  background-color: #fff !important;
+  background-color: #1e1e1e !important;
   height: 70px!important;
   position: fixed!important;
   top: 0!important;
@@ -669,7 +669,6 @@ Header Style
     width: 100%;
   }
   .header-area {
-    background-color: #f7f7f7;
     padding: 0px 15px;
     height: 80px;
     box-shadow: none;
@@ -764,6 +763,10 @@ Header Style
   .header-area .main-nav .nav li.submenu:hover ul, .header-area .main-nav .nav li.submenu:focus ul {
     height: 0px;
   }
+}
+
+.description{
+  color: white;
 }
 
 /* 
